@@ -1,4 +1,9 @@
 clc; clear all;clear;
+
+%Add functions path to matlab search path
+functionname='detectCNV.m'; functiondir=which(functionname);
+functiondir=functiondir(1:end-length(functionname));
+addpath([functiondir '/data'])
 %% Parameters
 % No. indivisual
 num_ind = 12877;
